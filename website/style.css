@@ -1,0 +1,595 @@
+/* điện thoại đứng */
+@media screen and (min-width:240px){
+
+}
+
+/* điện thoại ngang và máy tính bảng dọc */
+@media screen and (min-width:768px){
+    
+
+}
+
+/* laptop và máy tính bằng ngang  */
+@media screen and (min-width:1024px){
+
+}
+
+
+
+*{
+    margin: 0;
+}
+:root{
+    --color1: #FC6600;
+    --color2: #1598d4;
+}
+header{
+    display: flex;  
+    justify-content: space-between;
+     align-items: center;
+}
+
+header img{
+    width: 110px;
+}
+/* điện thoại đứng */
+@media screen and (min-width:240px){
+
+}
+
+/* điện thoại ngang và máy tính bảng dọc */
+@media screen and (min-width:768px){
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+
+}
+
+/* laptop và máy tính bằng ngang  */
+@media screen and (min-width:1024px){
+    header{
+        margin-left:12%;
+        margin-right: 12%;
+    }
+
+}
+
+/* menu */
+.menu{
+    background-color: var(--color2);
+    color: white;
+    font-size: 22px;
+    padding: 7px;
+}
+nav{
+    background-color: var(--color2);
+    padding: 10px;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 5px;
+}
+
+.slide{
+    position: relative;
+    text-align: center;
+}
+.slide .bi-caret-left{
+    position: absolute;
+    left: 10px;
+    top: 45%;
+    font-size: 2rem;
+    color: white;
+}
+.side .bi-caret-right{
+    position:absolute;
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    font-size: 2rem;
+    color: white;
+}
+
+.slide .list{
+    position: absolute;
+    bottom: 5%;
+    font-size: 5rem;
+    text-align: center;
+    left: calc(50% - 40px);
+}
+
+.list-tour article{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.851);
+    border-radius: 10px;
+    margin: 10px;
+}
+.list-tour img{
+    width:100%;
+    border-radius: 10px 10px 0 0;
+}
+.list-tour p {
+    padding: 10px;
+}
+ 
+/* điện thooại ngang và máy tính bản */
+@media screen and (min-width:768px){
+    .list-tour{
+        display: flex;
+    }
+}
+/* Laptop và máy tính bảng ngang */
+@media screen and (min-width:1024px){
+    main, header{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+.feedback img{
+    width: 250px;
+    height: 250px;
+    border: 1px solid green;
+    border-radius: 50%;
+}
+.feedback article{
+    padding: 10px;
+}
+.feedback p i{
+    color:rgba(231, 198, 0, 0.851);
+}
+
+/* điện thoại ngang và máy tinahs bảng đọc */
+@media screen and (min-width:768px){
+    .feeedback{
+        display: flex;
+    }
+}
+
+/* du lịch nước ngoài */
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.grid-container img{
+    width: 100%;
+}
+.grid-container{
+    padding: 10px;
+}
+
+/* điện thoại ngang và máy tính bảng dọc */
+@media screen and (min-width:768px){
+    .feedback{
+        display: flex;
+        justify-content: space-between;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        'item1 item1 item2 item3'
+        'item1 item1 item4 item5';
+        gap: 10px;
+    }
+}
+
+/* foooter */
+@media screen and (min-width:1024px){
+    footer section{
+        margin-left: 12%;
+        margin-right: 12%;
+        display: flex;
+    }
+}
+    footer{
+
+        background-color: #1598d4;
+    }
+
+    /* //form chữ  */
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* hiệu ứng phóng to ảnh */
+    /* du lịch trong nươccs */
+    .list-tour div{
+        overflow: hidden;
+    }
+    .list-tour img:hover{
+        transform: scale(1.2);
+    }
+    .list-tourimg{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        transition: 0.5s;
+    }
+    /* du lịch nước ngoài */
+
+    .grid-container div{
+        overflow: hidden;
+    }
+    .grid-container img:hover{
+        transform: scale(1.2);
+    }
+    .grid-container img{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        transition: 0.5s;
+    }
+   /* chuyển màu  */
+.color{
+    display: flex;
+    justify-content: center;
+   }
+#c1{
+    width: 15px;
+    height: 15px;
+    background-color: #009943;
+    margin: 5px;
+}
+#c2{
+    width: 15px;
+    height: 15px;
+    background-color: #e2bb10;
+    margin: 5px;
+}
+#c3{
+    width: 15px;
+    height: 15px;
+    background-color: #0fe3ea;
+    margin: 5px;
+}
+     /* sáng ảnh */
+     .banner {
+      
+        position: relative;
+    }
+    .banner::before {
+        position: absolute;
+        top: 0;
+        left: -75%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+        -webkit-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+    }
+    .banner:hover::before {
+        -webkit-animation: shine 1s;
+        animation: shine 1s;
+    }
+    @-webkit-keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+    @keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+    h2{
+        color: #1598d4;
+    }
+    hr{
+        height:3px;
+        width: 300px;
+        background-color: #FC6600;
+        
+    }
+button{
+    height: 50px;
+    width: 100px;
+    background-color: #0fe3ea;
+    color: aliceblue;
+}
+button:hover{
+    background-color: #009943;
+    color: red;
+}   
+
+/* hiện chữ trên ảnh */
+.item1 {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .item1:hover .image {
+    opacity: 0.3;
+  }
+  
+  .item1:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  /* item2 */
+  .item2 {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .item2:hover .image {
+    opacity: 0.3;
+  }
+  
+  .item2:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  /* item3 */
+  .item3 {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .item3:hover .image {
+    opacity: 0.3;
+  }
+  
+  .item3:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  /* item4 */
+  .item4 {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .item4:hover .image {
+    opacity: 0.3;
+  }
+  
+  .item4:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  /* item5 */
+  .item5 {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .item5:hover .image {
+    opacity: 0.3;
+  }
+  
+  .item5:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  /* hình ảnh của khách hàng */
+  *{
+    box-sizing: border-box;
+  }
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery img{
+    width: 100%;
+  }
+  .column-3 img{
+    height: 33%;
+    object-fit: cover;
+  }
+  .column-4 img{
+    flex: 50%;
+    padding: 2px;
+    height: 500px;
+  }
+  /* điện thoại ngang máy tính bảng dọc */
+  @media screen and (min-width:768px){
+    .column-3,.column-4{
+        flex: 25%;
+    }}
+h3{
+    color: #1598d4;
+}
+h4{
+    color: red;
+}
+/* menu */
+nav a{
+    text-size-adjust: unset;
+    
+}
+
+nav a:hover{
+   color:brown;
+}
+
+/* đăng nhập */
+.login{
+  height: 100vh;
+  background-image: -webkit-linear-gradient(top left, #a802e0,#f7676a);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.login h3{
+  color: white;
+}
+.login form{
+  text-align: left;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.login #inputPass,#inputUser{
+  width: 95%;
+  height: 25px;
+  margin-bottom: 10px;
+}
+.login a{
+  color: white;
+  text-decoration: none;
+}
+.login button{
+  height: 30px;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+/* điện thoại ngang và máy tính bảng dọc */
+@media screen and (min-width:768px){
+  .login article{
+    display: flex;
+  }
+}

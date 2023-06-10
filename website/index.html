@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website du lịch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadTheme()">
+    <header>
+        <img class="logo" src="img/logo.png" alt="" width="70px">
+            <div>
+                <b class="hotline"><i class="fa-solid fa-square-phone"></i>HOTLINE:0977777777</b>
+                <div class="color"></div>
+                    <div id="c1"></div>
+                    <div id="c2"></div>
+                    <div id="c3"></div>
+            </div>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+
+    </header>
+    <div class="menu">
+        <i class="bi bi-list"></i>
+    </div>
+    <nav>
+        <a href="">Trang chủ</a>
+        <a href="">Giới thiệu</a>
+        <a href="">Tin tức</a>
+        <a href="">Tour trong nước</a>
+        <a href="">Tour quốc tế</a>
+        <a href="">Liên hệ</a>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    
+        <li><a href="login.html" target="self">Đăng Nhập</a></li>
+    </nav>
+    <div class="slide">
+        <img id="banner" src="img/banner1.jpg" alt="" width="100%" >
+        <i class="bi bi-caret-left" onclick="prew()"></i>
+        <i class="ni ni-caret-right" onclick="next()"></i>
+        <div>
+            <span id="0">.</span>
+            <span id="1">.</span>
+            <span id="2">.</span>
+        </div>
+    </div>
+    <main>
+        <h2><center>Danh sách tour trong nước</center></h2><center><hr></center>
+        <section class="list-tour">
+            <article>
+                <img src="img/dulichdanang.jpg" alt="">
+                <center><p><b>Tour Đà Nẵng</b>
+                </p><b>Giá: 5,000,000 đ</b></p>
+                <button name="button" type="button">Đặt Tour</button></center>
+            </article>
+            <article>
+                <img src="img/hoian.jpg" alt="">
+              <center><p><b>Tour Hội An</b>
+                </p><b>Giá: 8,000,000 đ</b></p>
+                <button name="button" type="button">Đặt Tour</button></center>  
+            </article>
+            <article>
+                <img src="img/dulichphuquoc.jpg" alt="">
+                <center><p><b>Tour Phú Quốc</b>
+                </p><b>Giá: 8,000,000 đ</b></p>
+                <button name="button" type="button">Đặt Tour</button></center>
+            </article>
+            <article>
+                <img src="img/du-lich-da-lat.jpg" alt="">
+                <center><p><b>Tour Đà Lạt</b>
+                </p><b> Giá: 6,000,000 đ</b></p>
+                <button name="button" type="button">Đặt Tour</button></center>
+            </article>
+            
+        </section>
+        <section class="banner">
+            <h2><center>Khuyến Mãi Hot</center></h2><center><hr></center>
+           <center><img src="img/banner-du-lich-he.jpg" alt=""   width="1000" height="200"></center> 
+        </section>
+        <h2><center>Du Lịch Quốc Tế<center></h2><center><hr></center>
+        <section class="grid-container">
+            <div class="item1">
+                <img src="img/anh-dai-dien-kinh-nghiem-du-lich-anh-quoc.jpg" alt="Avatar" class="image" style="width:100%">
+                    <div class="middle">
+                         <div class="text">Xem Thêm</div>
+                    </div>
+                <p>- Thành cổ York, được xây dựng bởi người La Mã cổ đại. Đây là thành phố có tường thành được bảo quản tốt nhất và lâu đời nhất của nước Anh.</p>
+
+            </div>
+            <div class="item2">
+                <img src="img/bangkok-thai-lan.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                     <div class="text">Xem Thêm</div>
+                </div>
+                <p>Du Lịch Thái Lan</p>
+
+            </div>
+            <div class="item3">
+                <img src="img/ladakh-tour.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                     <div class="text">Xem Thêm</div>
+                </div>
+                <p>Du Lịch Tây Tạng</p>
+
+            </div>
+            <div class="item4">
+                <img src="img/hongkong.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                     <div class="text">Xem Thêm</div>
+                </div>
+                <p>Du Lịch Hong Kong</p>
+
+            </div>
+            <div class="item5">
+                <img src="img/nb.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                     <div class="text">Xem Thêm</div>
+                </div>
+                <p>Du Lịch Nhật Bản</p>
+
+            </div>
+        </section>
+        <h3><center>THƯ VIỆN CỦA KHÁCH HÀNG <hr></center></h3>
+        <section class="gallery">
+            <div class="column-3">
+                <img src="img/khachhang1.jpg" alt="">
+                <img src="img/khachhang2.jpg" alt="">
+                <img src="img/khachhang3.jpg" alt="">
+            </div>
+            <div class="column-4">
+                <img src="img/khachhang5.jpg" alt="">
+                <img src="img/khachhang6.jpg" alt="">
+                <img src="img/khachhang7.jpg" alt="">
+                <img src="img/khachhang8.jpg" alt="">
+            </div>
+            <div class="column-3">
+                <img src="img/khachhang9.jpg" alt="">
+                <img src="img/khachhang10.jpg" alt="">
+                <img src="img/khachhang11.jpg" alt="">
+            </div>
+            <div class="column-4">
+                <img src="img/khachhang4.jpg" alt="">
+                <img src="img/khachhang12.jpg" alt="">
+                <img src="img/khachhang13.jpg" alt="">
+                <img src="img/khachhang14.jpg" alt="">
+            </div>
+        </section>
+
+        <h2><center>Phản hồi của khách hàng</center></h2><center><hr></center>
+          <center><section class="feedback">
+                <article>
+                    <img src="img/phanhoi1.jpg" alt="">
+                    <p>Minh Quang</p>
+                    <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </p>
+                    <span>
+                        <i>
+                            "Chuyến du lịch rất vui và phong cảnh rất đẹp"
+                        </i>
+                    </span>
+                </article>
+                <article>
+                    <img src="img/anhthu.jpg" alt="">
+                    <p>Trần Ngọc Anh Thư</p>
+                    <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </p>
+                    <span>
+                        <i>
+                            "Chất lượng dịch vụ tốt , nhân viên nhiệt tình , 5 sao"
+                        </i>
+                    </span>
+                </article>
+                <article>
+                    <img src="img/xuankhoi.jpg" alt="">
+                    <p>Xuân Khôi</p>
+                    <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </p>
+                    <span>
+                        <i>
+                            "Chuyến đi thật đáng nhớ , phong cảnh rất đẹp , dịch vụ tốt"
+                        </i>
+                    </span>
+                </article>
+            </section> </center>    
+    </main>
+    <footer>
+       <center><section>
+           <div><br>
+                <h4>LIÊN HỆ</h4>
+                <hr>
+                <p>Phường Tân Chánh Hiệp, Q12, TPHCM</p>
+                <p>Email: dulichviet@gmail.com</p>
+                <p>Điện Thoại: 0123456666-0334444444</p>
+                <p>GPKD lữ khách quốc tế số 79-400/2015/TCDL</p>
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+          <div><br>
+                <h4>BẢN ĐỒ</h4>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3087.7022197390606!2d106.62674724771415!3d10.853245052750319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b161f50ae47%3A0x2328d1d1acc3b11a!2sFPT%20Polytechnic%20-%20T%C3%B2a%20F!5e0!3m2!1sen!2s!4v1686274778294!5m2!1sen!2s"
+                width="300"
+                height="250"
+                style="border:0;"
+                allowfullscreen="" 
+                loading="lazy"
+                 referrerpolicy="no-referrer-when-downgrade"></iframe>   
+            </div>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <div><br>
+                <h4>KẾT NỐI</h4>
+                <hr>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-íntagram"></i>
+                <p>Đăng kí nhận thông tin khiến mãi</p>
+                <input type="text"
+                    placeholder="Nhập email nhận khuyến mãi"
+                    width="90%"
+                >
+            <button class="btn">Đăng Ký</button>
+            </div>
+        </section></center> 
+    </footer>   
+    <script src="main.js"></script>
+</body>
+
+    
+
+</html>
